@@ -105,7 +105,7 @@ To create a ROOT tree (Run###.root) and a matrix file (histo_###.root) from your
 
 Now, you can look at your gamma-ray data using ***GRSISort***!
 
-[If you run into any sorting issues, there are sorted ROOT files attached to this repository so you finish this prac.]
+***If you run into any sorting issues, there are sorted ROOT files attached to this repository so you finish this prac.***
 
 If you want to install GRSISort on your own computer, follow the instructions for Ubuntu, ROOT and GRSISort from the GitHub: https://github.com/UWCNuclear/UbuntuSetUp
 
@@ -171,7 +171,7 @@ Record all your results, figures, settings, and reasoning for all the activities
 
 Make sure you answer all the questions.
 
-You can find the [rubric here](https://docs.google.com/document/d/17nqnS2tgA3YvmCIROZFLO4soWhkX_9ISiXuKfEww6I4/edit?usp=sharing).
+You can find the [marking rubric here](https://docs.google.com/document/d/17nqnS2tgA3YvmCIROZFLO4soWhkX_9ISiXuKfEww6I4/edit?usp=sharing).
 
 ## References
 
