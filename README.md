@@ -100,7 +100,7 @@ Remember the procedure that was done with the analogue set-up in the previous pr
 
 For the digital system, the gain and offset are applied when sorting the data acquired using the sorting code ***xia4ids***.
 
-- In the computer lab, using the Ubuntu terminal, follow the instructions (4 steps) to install the sorting codes xia4ids: https://github.com/UWCNuclear/xia4mandela
+- In the computer lab, using the Ubuntu terminal, follow the instructions (4 steps) to install the sorting codes xia4ids (https://github.com/UWCNuclear/xia4mandela):
 
 **Step 1.**	To download xia4ids, paste the following line in your terminal:
 
