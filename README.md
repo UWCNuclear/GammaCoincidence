@@ -38,7 +38,7 @@ Digitizer → Code → List mode → Sorting code → Histogram code → Any his
 
 If the above is working correctly, you can start to look at the “spectrum” on the MCA software. Learn to use the icons – green arrow to start, read square to stop the counting, and yellow square to delete the spectrum. 
 
-The setup uses a Palmtop Multi-channel analyser (MCA) to digitise the signals. This is what computer people call an ADC – an analogue-to-digital converter. It turns the amplitude of the signal into a channel number. We have up to 8192 so-called “channels” that store the number of counts in a specific energy gap. A high amplitude signal goes into a high channel and a low energy signal into a low channel, in a proportional way. These channels are now displayed from left to right on the display. So, high energy is to the right and low energy to the left.
+The setup uses a Palmtop Multi-channel analyser (MCA) to digitise the signals. This is what computer people call an ADC – an **analogue-to-digital converter**. It turns the amplitude of the signal into a channel number. We have up to 8192 so-called “channels” that store the number of counts in a specific energy gap. A high amplitude signal goes into a high channel and a low energy signal into a low channel, in a proportional way. These channels are now displayed from left to right on the display. So, high energy is to the right and low energy to the left.
 
 As you saw from the oscilloscope, the pre-amplifier gives output pulses that are a few volts high. The heights of these pulses are proportional to the ENERGY of the incoming gamma ray. You can check this by looking at the signal of the 22Na source and comparing it to the 60Co source that gives off higher energy gamma rays. 
 
@@ -76,8 +76,9 @@ As you saw from the oscilloscope, the pre-amplifier gives output pulses that are
 - Return the sources to the storage room.
 
 # Activity 3: Sorting Data Files from a Digital Experimental Setup
-Like for the analogue system, the heights of the pulses are proportional to the ENERGY of the incoming gamma ray. The positioning of a certain energy signal on the spectrum depends on the amplification and the calibration parameters. Therefore, a linear relationship can be found between the energy and the channel number: Energy = ***a****Channel + ***b***, where the slope ***a*** is the gain and the intercept ***b*** is the offset. Remember the procedure that was done with the analogue set-up in the previous practicals:
+Like for the analogue system, the heights of the pulses are proportional to the ENERGY of the incoming gamma ray. The positioning of a certain energy signal on the spectrum depends on the amplification and the calibration parameters. Therefore, a linear relationship can be found between the energy and the channel number: Energy = ***a****Channel + ***b***, where the slope ***a*** is the gain and the intercept ***b*** is the offset.
 
+Remember the procedure that was done with the analogue set-up in the previous practicals:
 - With a 137Cs source, acquire a spectrum for a few minutes and identify the 662-keV photopeak (full-energy peak). When the acquisition is off, choose a Region of Interest (ROI) around the peak to get the CENTROID value, which is the channel number where the peak is located.
 - Repeat with sources of  22Na (2 peaks) and 60Co (2 peaks), for a total of 5 peaks. While doing this, *make sure that you do not change the voltage or the amplification*, because this will change the energy vs. channel number relationship. 
 - With these energies and channels, we can now get the channel number and energy relationship. Use Excel to find the relationship so that you get an energy scale at the bottom instead of a channel scale.
@@ -85,6 +86,23 @@ Like for the analogue system, the heights of the pulses are proportional to the 
 For the digital system, the gain and offset are applied when sorting the data acquired using the sorting code ***xia4ids***.
 
 - In the computer lab, using the Ubuntu terminal, follow the instructions (4 steps) to install the sorting codes xia4ids: https://github.com/UWCNuclear/xia4mandela
+
+**Step 1.**	To download xia4ids, paste the following line in your terminal:
+
+    git clone https://github.com/rlica/xia4ids
+    
+**Step 2.**	Open your .bashrc file (gedit ~/.bashrc) and add the following line before saving and closing the file:
+
+    PATH=$PATH:~/xia4ids/bin/
+
+**Step 3.**	Paste the following command in the terminal:
+
+    source ~/.bashrc
+
+**Step 4.**	To compile, go to ~/xia4ids/ and type:
+
+    make
+    
 - Follow the instructions below to copy the required calibration and configuration files for xia4ids:
 
       git clone https://github.com/UWCNuclear/xia4mandela
@@ -107,9 +125,9 @@ Now, you can look at your gamma-ray data using ***GRSISort***!
 
 ***If you run into any sorting issues, there are sorted ROOT files attached to this repository so you finish this prac.***
 
-If you want to install GRSISort on your own computer, follow the instructions for Ubuntu, ROOT and GRSISort from the GitHub: https://github.com/UWCNuclear/UbuntuSetUp
+If you want to install GRSISort on your own computer, follow the instructions for **Ubuntu, ROOT and GRSISort** from the GitHub: https://github.com/UWCNuclear/UbuntuSetUp
 
-Remember that Xming has to be on to open any graphical window :-)
+Remember that **Xming** has to be on to open any graphical window :-)
 
 To look at 1D histograms for channels 0 and 1 and save screenshots of the histograms:
 
