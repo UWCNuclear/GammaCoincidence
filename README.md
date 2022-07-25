@@ -1,3 +1,18 @@
+**Jump to:**
+
+- [Equipment](https://github.com/UWCNuclear/GammaCoincidence#equipment)
+- [Introduction](https://github.com/UWCNuclear/GammaCoincidence#introduction)
+- [Questions](https://github.com/UWCNuclear/GammaCoincidence#questions)
+- [Activity 1: Coincidences with an Analog Experimental Setup (2 hours)](https://github.com/UWCNuclear/GammaCoincidence#activity-1-coincidences-with-an-analog-experimental-setup-2-hours)
+- [Questions (continued)](https://github.com/UWCNuclear/GammaCoincidence#questions-continued)
+- [Questions (continued 2)](https://github.com/UWCNuclear/GammaCoincidence#questions-continued-2)
+- [Activity 2: Coincidences with a Digital Experimental Setup (1 hour)](https://github.com/UWCNuclear/GammaCoincidence#activity-2-coincidences-with-a-digital-experimental-setup-1-hour)
+- [Activity 3: Sorting Data Files from a Digital Experimental Setup](https://github.com/UWCNuclear/GammaCoincidence#activity-3-sorting-data-files-from-a-digital-experimental-setup)
+- [Questions (continued 3)](https://github.com/UWCNuclear/GammaCoincidence#questions-continued-3)
+- [Reporting](https://github.com/UWCNuclear/GammaCoincidence#reporting)
+- [References](https://github.com/UWCNuclear/GammaCoincidence#references)
+
+
 ## Equipment
 - Radioactive sources: 22Na (511 & 1274 keV), 137Cs (662 keV), and 60Co (1173 & 1333 keV)
 - Two NaI(Tl) scintillators, two photomultiplier tubes assembly, and two detector stands
@@ -45,7 +60,7 @@ As you saw from the oscilloscope, the pre-amplifier gives output pulses that are
 - Connect the two CFD/SCA outputs to the universal coincidence module inputs.
 - Connect the universal coincidence module output to the MCA input and acquire a spectrum on the MCA for a few minutes.
 
-## Questions (continued)
+## Questions (continued 2)
 9. What does the MCA spectrum look like for the pre-amp and for the CFD? Save figures.
 10. Are the pulses collected from the coincidence module output different? Why or why not?
 11. What conditions need to be met for the coincidence module to emit a pulse?
@@ -159,7 +174,7 @@ To look at the 2D coincidence matrix and save screenshots of the histograms:
 
 - Save screenshots of the gated histograms  :-)
 
-## Questions (continued)
+## Questions (continued 3)
 12. The 1173-keV gamma ray in 60Co is in coincidence with which gamma ray?
 
 The 1332-keV gamma ray in 60Co is in coincidence with which gamma ray?
