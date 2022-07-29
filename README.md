@@ -61,7 +61,7 @@ As you saw from the oscilloscope, the pre-amplifier gives output pulses that are
 - Connect the universal coincidence module output to the MCA input and acquire a spectrum on the MCA for a few minutes.
 
 ## Questions (continued 2)
-9. What does the MCA spectrum look like for the CFD/SCA? Save figures.
+9. What does the MCA spectrum look like for the CFD/SCA output? Save figures.
 10. Are the coincidence module output signals different? Why or why not?
 11. What conditions need to be met for the coincidence module to emit a pulse?
 
