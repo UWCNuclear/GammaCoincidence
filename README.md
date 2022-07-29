@@ -62,7 +62,7 @@ As you saw from the oscilloscope, the pre-amplifier gives output pulses that are
 
 ## Questions (continued 2)
 9. What does the MCA spectrum look like for the CFD/SCA? Save figures.
-10. Are the pulses collected from the coincidence module output different? Why or why not?
+10. Are the coincidence module output signals different? Why or why not?
 11. What conditions need to be met for the coincidence module to emit a pulse?
 
 - On the HV module, slowly decrease the voltage to 0 V and switch off the module and the NIM crate.
