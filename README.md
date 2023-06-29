@@ -5,10 +5,9 @@
 - [Questions](https://github.com/UWCNuclear/GammaCoincidence#questions)
 - [Activity 1: Coincidences with an Analog Experimental Setup (1 hour)](https://github.com/UWCNuclear/GammaCoincidence#activity-1-coincidences-with-an-analog-experimental-setup-1-hour)
 - [Questions (continued)](https://github.com/UWCNuclear/GammaCoincidence#questions-continued)
-- [Questions (continued 2)](https://github.com/UWCNuclear/GammaCoincidence#questions-continued-2)
 - [Activity 2: Coincidences with a Digital Experimental Setup (1 hour)](https://github.com/UWCNuclear/GammaCoincidence#activity-2-coincidences-with-a-digital-experimental-setup-1-hour)
 - [Activity 3: Sorting Data Files from a Digital Experimental Setup (1 hour)](https://github.com/UWCNuclear/GammaCoincidence#activity-3-sorting-data-files-from-a-digital-experimental-setup-1-hour)
-- [Questions (continued 3)](https://github.com/UWCNuclear/GammaCoincidence#questions-continued-3)
+- [Questions (continued 2)](https://github.com/UWCNuclear/GammaCoincidence#questions-continued-2)
 - [Reporting](https://github.com/UWCNuclear/GammaCoincidence#reporting)
 - [References](https://github.com/UWCNuclear/GammaCoincidence#references)
 
