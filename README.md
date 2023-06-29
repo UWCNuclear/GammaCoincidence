@@ -38,7 +38,7 @@ Digitizer → Code → List mode → Sorting code → Histogram code → Any his
 4. How do photo-multiplier tubes work? Which types of interactions are involved?
 5. What is the rest mass energy of an electron in MeV? (Mass is 9 x 10-31 kg)
 
-# Activity 1: Coincidences with an Analog Experimental Setup (2 hours)
+# Activity 1: Coincidences with an Analog Experimental Setup (1 hour)
 - Make sure the high voltage cable is correctly connected (HV point on the detector to the POS HIGH VOLTAGE of the HV power supply module) as well as the coaxial cable that connects the anode on the detectors to the INPUTS of the preamp module.
 - Switch on the NIM crate, the Data Acquisition laptop, and the Palmtop MCA. Start the MCA software on the PC.
 - On the HV module, set the voltage to 0 V and switch on the module.
@@ -48,7 +48,7 @@ Digitizer → Code → List mode → Sorting code → Histogram code → Any his
 
 ## Questions (continued)
 6. Make a rough sketch of the oscilloscope figure in your report. Indicate the time and voltage scale used.
-7. With extra BNC cables, connect the pre-amp output to the Dual Spec Amplifier input, and the Dual Spec Amplifier output to the CFD/SCA input. Look at the CFD/SCA output on the oscilloscope and make a sketch. (Note that this signal is VERY different from the pre-amplifier output.) Repeat for the second detector and the second CFD/SCA module.
+7.  With extra BNC cables, connect the pre-amp output to the Dual Spec Amplifier input, and the Dual Spec Amplifier output to the CFD/SCA input. Look at the CFD/SCA output on the oscilloscope and make a sketch. (Note that this signal is VERY different from the pre-amplifier output.) Repeat for the second detector and the second CFD/SCA module.
 8. What do the acronyms HV, NIM, CFD and SCA mean?
 
 If the above is working correctly, you can start to look at the “spectrum” on the MCA software. Learn to use the icons – green arrow to start, read square to stop the counting, and yellow square to delete the spectrum. 
@@ -90,7 +90,7 @@ As you saw from the oscilloscope, the pre-amplifier gives output pulses that are
 - On the HV module, slowly decrease the voltage to 0 V and switch off the module and the NIM crate.
 - Return the sources to the storage room.
 
-# Activity 3: Sorting Data Files from a Digital Experimental Setup
+# Activity 3: Sorting Data Files from a Digital Experimental Setup (1 hour)
 Like for the analogue system, the heights of the pulses are proportional to the ENERGY of the incoming gamma ray. The positioning of a certain energy signal on the spectrum depends on the amplification and the calibration parameters. Therefore, a linear relationship can be found between the energy and the channel number: Energy = ***a****Channel + ***b***, where the slope ***a*** is the gain and the intercept ***b*** is the offset.
 
 Remember the procedure that was done with the analogue set-up in the previous practicals:
