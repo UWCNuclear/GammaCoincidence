@@ -45,13 +45,9 @@ Digitizer → Code → List mode → Sorting code → Histogram code → Any his
 - Place the 22Na source in the source holder between the detectors. This source gives off gamma rays with energies of 511 keV and 1274 keV. Make sure that the other sources are on the other side of the room to not cause background radiation in the spectrum!
 - Connect the pre-amp of one detector to channel 1 of the oscilloscope and look at the output (There should be nothing!). (The signal from the detector is first fed into a pre-amplifier.) Repeat by connecting the second detector in channel 2 of the oscilloscope.
 - Slowly increase the voltage to 1250 V. Make sure this is correctly done else you will see nothing!
-
-## Questions (continued)
-6. Make a rough sketch of the oscilloscope figure in your report. Indicate the time and voltage scale used.
-7.  With extra BNC cables, connect the pre-amp output to the Dual Spec Amplifier input, and the Dual Spec Amplifier output to the CFD/SCA input. Look at the CFD/SCA output on the oscilloscope and make a sketch. (Note that this signal is VERY different from the pre-amplifier output.) Repeat for the second detector and the second CFD/SCA module.
-8. What do the acronyms HV, NIM, CFD and SCA mean?
-
-If the above is working correctly, you can start to look at the “spectrum” on the MCA software. Learn to use the icons – green arrow to start, read square to stop the counting, and yellow square to delete the spectrum. 
+- Make a rough sketch of the oscilloscope figure in your report. Indicate the time and voltage scale used.
+- With extra BNC cables, connect the pre-amp output to the Dual Spec Amplifier input, and the Dual Spec Amplifier output to the CFD/SCA input. Look at the CFD/SCA output on the oscilloscope and make a sketch. (Note that this signal is VERY different from the pre-amplifier output.) Repeat for the second detector and the second CFD/SCA module.
+- If the above is working correctly, you can start to look at the “spectrum” on the MCA software. Learn to use the icons – green arrow to start, read square to stop the counting, and yellow square to delete the spectrum. 
 
 The setup uses a Palmtop Multi-channel analyser (MCA) to digitise the signals. This is what computer people call an ADC – an **analogue-to-digital converter**. It turns the amplitude of the signal into a channel number. We have up to 8192 so-called “channels” that store the number of counts in a specific energy gap. A high amplitude signal goes into a high channel and a low energy signal into a low channel, in a proportional way. These channels are now displayed from left to right on the display. So, high energy is to the right and low energy to the left.
 
@@ -60,10 +56,11 @@ As you saw from the oscilloscope, the pre-amplifier gives output pulses that are
 - Connect the two CFD/SCA outputs to the universal coincidence module inputs.
 - Connect the universal coincidence module output to the MCA input and acquire a spectrum on the MCA for a few minutes.
 
-## Questions (continued 2)
-9. What does the MCA spectrum look like for the CFD/SCA output? Save figures.
-10. Are the coincidence module output signals different? Why or why not?
-11. What conditions need to be met for the coincidence module to emit a pulse?
+## Questions (continued)
+6. What do the acronyms HV, NIM, CFD and SCA mean?
+7. What does the MCA spectrum look like for the CFD/SCA output? Save figures.
+8. Are the coincidence module output signals different? Why or why not?
+9. What conditions need to be met for the coincidence module to emit a pulse?
 
 - On the HV module, slowly decrease the voltage to 0 V and switch off the module and the NIM crate.
 - Gently disconnect the signal coaxial cables from the two detectors.
@@ -174,8 +171,8 @@ To look at the 2D coincidence matrix and save screenshots of the histograms:
 
 - Save screenshots of the gated histograms  :-)
 
-## Questions (continued 3)
-12. The 1173-keV gamma ray in 60Co is in coincidence with which gamma ray?
+## Questions (continued 2)
+10. The 1173-keV gamma ray in 60Co is in coincidence with which gamma ray?
 
 The 1332-keV gamma ray in 60Co is in coincidence with which gamma ray?
 
@@ -184,7 +181,7 @@ Which one(s) of the following decay schemes might correspond to 60Co? Why and wh
 ![This is an image](schemes.png)
 
 
-13. The 511-keV gamma ray in 22Na is in coincidence with which gamma ray?
+11. The 511-keV gamma ray in 22Na is in coincidence with which gamma ray?
 
 The 1274-keV gamma ray in 22Na is in coincidence with which gamma ray?
 
@@ -192,11 +189,11 @@ What might the decay scheme for 22Na look like? Why?
 
 What if the 511-keV gamma rays come from e-/e+ pair production rather than from the decay?
 
-14. The 662-keV gamma ray in 137Cs is in coincidence with which gamma ray?
+12. The 662-keV gamma ray in 137Cs is in coincidence with which gamma ray?
 
 What might the decay scheme for 137Cs look like? Why?
 
-15. Does the National Nuclear Data Center [NNDC] agree with your findings?
+13. Does the National Nuclear Data Center [NNDC] agree with your findings?
 
 ## Reporting
 
