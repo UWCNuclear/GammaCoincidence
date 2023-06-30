@@ -3,10 +3,10 @@
 - [Equipment](https://github.com/UWCNuclear/GammaCoincidence#equipment)
 - [Introduction](https://github.com/UWCNuclear/GammaCoincidence#introduction)
 - [Questions](https://github.com/UWCNuclear/GammaCoincidence#questions)
-- [Activity 1: Coincidences with an Analog Experimental Setup (1 hour)](https://github.com/UWCNuclear/GammaCoincidence#activity-1-coincidences-with-an-analog-experimental-setup-1-hour)
+- [Activity 1: Coincidences with an Analog Experimental Setup (1 hour)](https://github.com/UWCNuclear/GammaCoincidence#activity-1-coincidences-with-an-analog-experimental-setup)
 - [Questions (continued)](https://github.com/UWCNuclear/GammaCoincidence#questions-continued)
-- [Activity 2: Coincidences with a Digital Experimental Setup (1 hour)](https://github.com/UWCNuclear/GammaCoincidence#activity-2-coincidences-with-a-digital-experimental-setup-1-hour)
-- [Activity 3: Sorting Data Files from a Digital Experimental Setup (1 hour)](https://github.com/UWCNuclear/GammaCoincidence#activity-3-sorting-data-files-from-a-digital-experimental-setup-1-hour)
+- [Activity 2: Coincidences with a Digital Experimental Setup (1 hour)](https://github.com/UWCNuclear/GammaCoincidence#activity-2-coincidences-with-a-digital-experimental-setup)
+- [Activity 3: Sorting Data Files from a Digital Experimental Setup (1 hour)](https://github.com/UWCNuclear/GammaCoincidence#activity-3-sorting-data-files-from-a-digital-experimental-setup)
 - [Questions (continued 2)](https://github.com/UWCNuclear/GammaCoincidence#questions-continued-2)
 - [Reporting](https://github.com/UWCNuclear/GammaCoincidence#reporting)
 - [References](https://github.com/UWCNuclear/GammaCoincidence#references)
@@ -37,7 +37,7 @@ Digitizer → Code → List mode → Sorting code → Histogram code → Any his
 4. How do photo-multiplier tubes work? Which types of interactions are involved?
 5. What is the rest mass energy of an electron in MeV? (Mass is 9 x 10-31 kg)
 
-# Activity 1: Coincidences with an Analog Experimental Setup (1 hour)
+# Activity 1: Coincidences with an Analog Experimental Setup
 - Make sure the high voltage cable is correctly connected (HV point on the detector to the POS HIGH VOLTAGE of the HV power supply module) as well as the coaxial cable that connects the anode on the detectors to the INPUTS of the preamp module.
 - Switch on the NIM crate, the Data Acquisition laptop, and the Palmtop MCA. Start the MCA software on the PC.
 - On the HV module, set the voltage to 0 V and switch on the module.
@@ -45,13 +45,14 @@ Digitizer → Code → List mode → Sorting code → Histogram code → Any his
 - Connect the pre-amp of one detector to channel 1 of the oscilloscope and look at the output (There should be nothing!). (The signal from the detector is first fed into a pre-amplifier.) Repeat by connecting the second detector in channel 2 of the oscilloscope.
 - Slowly increase the voltage to 1250 V. Make sure this is correctly done else you will see nothing!
 - Make a rough sketch of the oscilloscope figure in your report. Indicate the time and voltage scale used.
-- With extra BNC cables, connect the pre-amp output to the Dual Spec Amplifier input, and the Dual Spec Amplifier output to the CFD/SCA input. Look at the CFD/SCA output on the oscilloscope and make a sketch. (Note that this signal is VERY different from the pre-amplifier output.) Repeat for the second detector and the second CFD/SCA module.
-- If the above is working correctly, you can start to look at the “spectrum” on the MCA software. Learn to use the icons – green arrow to start, read square to stop the counting, and yellow square to delete the spectrum. 
+- With extra BNC cables, connect the pre-amp output to the Dual Spec Amplifier input. Look at the Dual Spec Amplifier output on the oscilloscope and make a sketch. Repeat for the second detector and the second Dual Spec Amplifier module.
+- If the above is working correctly, you can start to look at the spectrum on the MCA software by connecting the Dual Spec Amplifier output to the MCA input. Learn to use the icons – green arrow to start, read square to stop the counting, and yellow square to delete the spectrum. Repeat for the second detector and the second Dual Spec Amplifier module.
 
 The setup uses a Palmtop Multi-channel analyser (MCA) to digitise the signals. This is what computer people call an ADC – an **analogue-to-digital converter**. It turns the amplitude of the signal into a channel number. We have up to 8192 so-called “channels” that store the number of counts in a specific energy gap. A high amplitude signal goes into a high channel and a low energy signal into a low channel, in a proportional way. These channels are now displayed from left to right on the display. So, high energy is to the right and low energy to the left.
 
 As you saw from the oscilloscope, the pre-amplifier gives output pulses that are a few volts high. The heights of these pulses are proportional to the ENERGY of the incoming gamma ray. You can check this by looking at the signal of the 22Na source and comparing it to the 60Co source that gives off higher energy gamma rays. 
 
+- Connect the Dual Spec Amplifier output to the CFD/SCA input. Look at the CFD/SCA output on the oscilloscope and make a sketch. (Note that this signal is VERY different from the pre-amplifier output.) Repeat for the second detector and the second CFD/SCA module.
 - Connect the two CFD/SCA outputs to the universal coincidence module inputs.
 - Connect the universal coincidence module output to the MCA input and acquire a spectrum on the MCA for a few minutes.
 
@@ -64,7 +65,7 @@ As you saw from the oscilloscope, the pre-amplifier gives output pulses that are
 - On the HV module, slowly decrease the voltage to 0 V and switch off the module and the NIM crate.
 - Gently disconnect the signal coaxial cables from the two detectors.
 
-# Activity 2: Coincidences with a Digital Experimental Setup (1 hour)
+# Activity 2: Coincidences with a Digital Experimental Setup
 - Switch on the XIA crate and reboot the Data Acquisition desktop.
 - Using a terminal, start the Poll2 software on the PC by navigating to ~/paass-lc/acq and typing “poll2”:
 
@@ -86,7 +87,7 @@ As you saw from the oscilloscope, the pre-amplifier gives output pulses that are
 - On the HV module, slowly decrease the voltage to 0 V and switch off the module and the NIM crate.
 - Return the sources to the storage room.
 
-# Activity 3: Sorting Data Files from a Digital Experimental Setup (1 hour)
+# Activity 3: Sorting Data Files from a Digital Experimental Setup
 Like for the analogue system, the heights of the pulses are proportional to the ENERGY of the incoming gamma ray. The positioning of a certain energy signal on the spectrum depends on the amplification and the calibration parameters. Therefore, a linear relationship can be found between the energy and the channel number: Energy = ***a****Channel + ***b***, where the slope ***a*** is the gain and the intercept ***b*** is the offset.
 
 Remember the procedure that was done with the analogue set-up in the previous practicals:
