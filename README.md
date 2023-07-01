@@ -31,61 +31,61 @@ The typical digital signal processing and acquisition chain includes these steps
 Digitizer → Code → List mode → Sorting code → Histogram code → Any histograms and matrices [CAEN, XIA, Kapoor]
 
 ## Questions
-1. What is gamma-ray emission?
-2. How do gamma rays interact with matter?
-3. Which type of detector is a NaI(Tl) crystal? How do they work?
-4. How do photo-multiplier tubes work? Which types of interactions are involved?
-5. What is the rest mass energy of an electron in MeV? (Mass is 9 x 10-31 kg)
+Question 1. What is gamma-ray emission?
+Question 2. How do gamma rays interact with matter?
+Question 3. Which type of detector is a NaI(Tl) crystal? How do they work?
+Question 4. How do photo-multiplier tubes work? Which types of interactions are involved?
+Question 5. What is the rest mass energy of an electron in MeV? (Mass is 9 x 10-31 kg)
 
 # Activity 1: Coincidences with an Analog Experimental Setup
-- Make sure the high voltage cable is correctly connected (HV point on the detector to the POS HIGH VOLTAGE of the HV power supply module) as well as the coaxial cable that connects the anode on the detectors to the INPUTS of the preamp module.
-- Switch on the NIM crate, the Data Acquisition laptop, and the Palmtop MCA. Start the MCA software on the PC.
-- On the HV module, set the voltage to 0 V and switch on the module.
-- Place the 22Na source in the source holder between the detectors. This source gives off gamma rays with energies of 511 keV and 1274 keV. Make sure that the other sources are on the other side of the room to not cause background radiation in the spectrum!
-- Connect the pre-amp of one detector to channel 1 of the oscilloscope and look at the output (There should be nothing!). (The signal from the detector is first fed into a pre-amplifier.) Repeat by connecting the second detector in channel 2 of the oscilloscope.
-- Slowly increase the voltage to 1250 V. Make sure this is correctly done else you will see nothing!
-- Make a rough sketch of the oscilloscope figure in your report. Indicate the time and voltage scale used.
-- With extra BNC cables, connect the pre-amp output to the Dual Spec Amplifier input. Look at the Dual Spec Amplifier output on the oscilloscope and make a sketch. Repeat for the second detector and the second Dual Spec Amplifier module.
-- If the above is working correctly, you can start to look at the spectrum on the MCA software by connecting the Dual Spec Amplifier output to the MCA input. Learn to use the icons – green arrow to start, read square to stop the counting, and yellow square to delete the spectrum. Repeat for the second detector and the second Dual Spec Amplifier module.
+1. Make sure the high voltage cable is correctly connected (HV point on the detector to the POS HIGH VOLTAGE of the HV power supply module) as well as the coaxial cable that connects the anode on the detectors to the INPUTS of the preamp module.
+2. Switch on the NIM crate, the Data Acquisition laptop, and the Palmtop MCA. Start the MCA software on the PC.
+3. On the HV module, set the voltage to 0 V and switch on the module.
+4. Place the 22Na source in the source holder between the detectors. This source gives off gamma rays with energies of 511 keV and 1274 keV. Make sure that the other sources are on the other side of the room to not cause background radiation in the spectrum!
+5. Connect the pre-amp of one detector to channel 1 of the oscilloscope and look at the output (There should be nothing!). (The signal from the detector is first fed into a pre-amplifier.) Repeat by connecting the second detector in channel 2 of the oscilloscope.
+6. Slowly increase the voltage to 1250 V. Make sure this is correctly done else you will see nothing!
+7. Make a rough sketch of the oscilloscope figure in your report. Indicate the time and voltage scale used.
+8. With extra BNC cables, connect the pre-amp output to the Dual Spec Amplifier input. Look at the Dual Spec Amplifier output on the oscilloscope and make a sketch. Repeat for the second detector and the second Dual Spec Amplifier module.
+9. If the above is working correctly, you can start to look at the spectrum on the MCA software by connecting the Dual Spec Amplifier output to the MCA input. Learn to use the icons – green arrow to start, read square to stop the counting, and yellow square to delete the spectrum. Repeat for the second detector and the second Dual Spec Amplifier module.
 
 The setup uses a Palmtop Multi-channel analyser (MCA) to digitise the signals. This is what computer people call an ADC – an **analogue-to-digital converter**. It turns the amplitude of the signal into a channel number. We have up to 8192 so-called “channels” that store the number of counts in a specific energy gap. A high amplitude signal goes into a high channel and a low energy signal into a low channel, in a proportional way. These channels are now displayed from left to right on the display. So, high energy is to the right and low energy to the left.
 
 As you saw from the oscilloscope, the pre-amplifier gives output pulses that are a few volts high. The heights of these pulses are proportional to the ENERGY of the incoming gamma ray. You can check this by looking at the signal of the 22Na source and comparing it to the 60Co source that gives off higher energy gamma rays. 
 
-- Connect the Dual Spec Amplifier output to the CFD/SCA input. Look at the CFD/SCA output on the oscilloscope and make a sketch. (Note that this signal is VERY different from the pre-amplifier output.) Repeat for the second detector and the second CFD/SCA module.
-- Connect the two CFD/SCA outputs to the universal coincidence module inputs.
-- Connect the universal coincidence module output to the MCA input and acquire a spectrum on the MCA for a few minutes.
+10. Connect the Dual Spec Amplifier output to the CFD/SCA input. Look at the CFD/SCA output on the oscilloscope and make a sketch. (Note that this signal is VERY different from the pre-amplifier output.) Repeat for the second detector and the second CFD/SCA module.
+11. Connect the two CFD/SCA outputs to the universal coincidence module inputs.
+12. Connect the universal coincidence module output to the MCA input and acquire a spectrum on the MCA for a few minutes.
 
 ## Questions (continued)
-6. What do the acronyms HV, NIM, CFD and SCA mean?
-7. What does the MCA spectrum look like for the CFD/SCA output? Save figures.
-8. Are the coincidence module output signals different? Why or why not?
-9. What conditions need to be met for the coincidence module to emit a pulse?
+Question 6. What do the acronyms HV, NIM, CFD, and SCA mean?
+Question 7. What does the MCA spectrum look like for the CFD/SCA output? Save figures.
+Question 8. Are the coincidence module output signals different? Why or why not?
+Question 9. What conditions need to be met for the coincidence module to emit a pulse?
 
-- On the HV module, slowly decrease the voltage to 0 V and switch off the module and the NIM crate.
-- Gently disconnect the signal coaxial cables from the two detectors.
+13. On the HV module, slowly decrease the voltage to 0 V and switch off the module and the NIM crate.
+14. Gently disconnect the signal coaxial cables from the two detectors.
 
 # Activity 2: Coincidences with a Digital Experimental Setup
-- Switch on the XIA crate and reboot the Data Acquisition desktop.
-- Using a terminal, start the Poll2 software on the PC by navigating to ~/paass-lc/acq and typing “poll2”:
+1. Switch on the XIA crate and reboot the Data Acquisition desktop.
+2. Using a terminal, start the Poll2 software on the PC by navigating to ~/paass-lc/acq and typing “poll2”:
 
       cd ~/paass-lc/acq
       poll2
-- Make sure the high voltage cable is correctly connected (HV point on the detector to the POS HIGH VOLTAGE of the HV power supply module) as well as the coaxial cable that connects the anode on the detector to the channels 0 and 1 of the Pixie-16 module.
-- Place the 22Na source in the source holder between the detectors. Make sure that the other sources are on the other side of the room to not cause background radiation in the spectrum!
-- Switch on the NIM crate.
-- On the HV module, set the voltage to 0 V and switch on the module.
-- Slowly increase the voltage to 1250 V. Make sure this is correctly done else you will see nothing!
-- Type “run” to start the acquisition. After a few minutes (5 minutes for 22Na and 137Cs, 10 minutes for 60Co), type “stop” to stop the acquisition.
+3. Make sure the high voltage cable is correctly connected (HV point on the detector to the POS HIGH VOLTAGE of the HV power supply module) as well as the coaxial cable that connects the anode on the detector to the channels 0 and 1 of the Pixie-16 module.
+4. Place the 22Na source in the source holder between the detectors. Make sure that the other sources are on the other side of the room to not cause background radiation in the spectrum!
+5. Switch on the NIM crate.
+6. On the HV module, set the voltage to 0 V and switch on the module.
+7. Slowly increase the voltage to 1250 V. Make sure this is correctly done else you will see nothing!
+8. Type “run” to start the acquisition. After a few minutes (5 minutes for 22Na and 137Cs, 10 minutes for 60Co), type “stop” to stop the acquisition.
 
       run
       stop
-- Replace the 22Na source by a 60Co source and acquire data (run, stop) for a few minutes. 
-- Repeat with a 137Cs source.
-- Type “exit” to exit poll2.
-- Once you have acquired data with the 3 sources, copy the 3 .ldf files to a USB key.
-- On the HV module, slowly decrease the voltage to 0 V and switch off the module and the NIM crate.
-- Return the sources to the storage room.
+9. Replace the 22Na source by a 60Co source and acquire data (run, stop) for a few minutes. 
+10. Repeat with a 137Cs source.
+11. Type “exit” to exit poll2.
+12. Once you have acquired data with the 3 sources, copy the 3 .ldf files to a USB key.
+13. On the HV module, slowly decrease the voltage to 0 V and switch off the module and the NIM crate.
+14. Return the sources to the storage room.
 
 # Activity 3: Sorting Data Files from a Digital Experimental Setup
 Like for the analogue system, the heights of the pulses are proportional to the ENERGY of the incoming gamma ray. The positioning of a certain energy signal on the spectrum depends on the amplification and the calibration parameters. Therefore, a linear relationship can be found between the energy and the channel number: Energy = ***a****Channel + ***b***, where the slope ***a*** is the gain and the intercept ***b*** is the offset.
@@ -97,7 +97,7 @@ Remember the procedure that was done with the analogue set-up in the previous pr
 
 For the digital system, the gain and offset are applied when sorting the data acquired using the sorting code ***xia4ids***.
 
-- In the computer lab, using the Ubuntu terminal, follow the instructions (4 steps) to install the sorting codes xia4ids (https://github.com/UWCNuclear/xia4mandela):
+1. In the computer lab, using the Ubuntu terminal, follow the instructions (4 steps) to install the sorting codes xia4ids (https://github.com/UWCNuclear/xia4mandela):
 
 **Step 1.**	To download xia4ids, paste the following line in your terminal:
 
@@ -115,20 +115,20 @@ For the digital system, the gain and offset are applied when sorting the data ac
 
     make
     
-- Follow the instructions below to copy the required calibration and configuration files for xia4ids:
+2. Follow the instructions below to copy the required calibration and configuration files for xia4ids:
 
       git clone https://github.com/UWCNuclear/xia4mandela
       cd xia4mandela
       mkdir raw
 To create a ROOT tree (Run###.root) and a matrix file (histo_###.root) from your .ldf files, follow the following instructions.
-- Copy your 3 .ldf files from your USB key to your Desktop in Windows.
-- Then, from the Ubuntu terminal, go to the raw directory and type:
+3. Copy your 3 .ldf files from your USB key to your Desktop in Windows.
+4. Then, from the Ubuntu terminal, go to the raw directory and type:
 
       mv /mnt/c/Users/user/Desktop/run_0* .
-- From the xia4mandela directory, compile the Run_ldf.sh script with the command:
+5. From the xia4mandela directory, compile the Run_ldf.sh script with the command:
 
       g++ histo_ldf.cxx `root-config --cflags --libs` -O3 -o histo_ldf
-- Use the following command to run the script to automatically sort your data and create the files:
+6. Use the following command to run the script to automatically sort your data and create the files:
 
       chmod +x *
       ./Run_ldf.sh
@@ -172,7 +172,7 @@ To look at the 2D coincidence matrix and save screenshots of the histograms:
 - Save screenshots of the gated histograms  :-)
 
 ## Questions (continued 2)
-10. The 1173-keV gamma ray in 60Co is in coincidence with which gamma ray?
+Question 10. The 1173-keV gamma ray in 60Co is in coincidence with which gamma ray?
 
 The 1332-keV gamma ray in 60Co is in coincidence with which gamma ray?
 
@@ -181,7 +181,7 @@ Which one(s) of the following decay schemes might correspond to 60Co? Why and wh
 ![This is an image](schemes.png)
 
 
-11. The 511-keV gamma ray in 22Na is in coincidence with which gamma ray?
+Question 11. The 511-keV gamma ray in 22Na is in coincidence with which gamma ray?
 
 The 1274-keV gamma ray in 22Na is in coincidence with which gamma ray?
 
@@ -189,11 +189,11 @@ What might the decay scheme for 22Na look like? Why?
 
 What if the 511-keV gamma rays come from e-/e+ pair production rather than from the decay?
 
-12. The 662-keV gamma ray in 137Cs is in coincidence with which gamma ray?
+Question 12. The 662-keV gamma ray in 137Cs is in coincidence with which gamma ray?
 
 What might the decay scheme for 137Cs look like? Why?
 
-13. Does the National Nuclear Data Center [NNDC] agree with your findings?
+Question 13. Does the National Nuclear Data Center [NNDC] agree with your findings?
 
 ## Reporting
 
