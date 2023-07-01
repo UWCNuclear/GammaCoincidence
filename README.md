@@ -2,12 +2,12 @@
 
 - [Equipment](https://github.com/UWCNuclear/GammaCoincidence#equipment)
 - [Introduction](https://github.com/UWCNuclear/GammaCoincidence#introduction)
-- [Questions](https://github.com/UWCNuclear/GammaCoincidence#questions)
+- [Questions (Part 1)](https://github.com/UWCNuclear/GammaCoincidence#questions-part-1)
 - [Activity 1: Coincidences with an Analog Experimental Setup](https://github.com/UWCNuclear/GammaCoincidence#activity-1-coincidences-with-an-analog-experimental-setup)
-- [Questions (continued)](https://github.com/UWCNuclear/GammaCoincidence#questions-continued)
+- [Questions (Part 2)](https://github.com/UWCNuclear/GammaCoincidence#questions-part-2)
 - [Activity 2: Coincidences with a Digital Experimental Setup](https://github.com/UWCNuclear/GammaCoincidence#activity-2-coincidences-with-a-digital-experimental-setup)
 - [Activity 3: Sorting Data Files from a Digital Experimental Setup](https://github.com/UWCNuclear/GammaCoincidence#activity-3-sorting-data-files-from-a-digital-experimental-setup)
-- [Questions (continued 2)](https://github.com/UWCNuclear/GammaCoincidence#questions-continued-2)
+- [Questions (Part 3)](https://github.com/UWCNuclear/GammaCoincidence#questions-part-3)
 - [Reporting](https://github.com/UWCNuclear/GammaCoincidence#reporting)
 - [References](https://github.com/UWCNuclear/GammaCoincidence#references)
 
@@ -30,12 +30,16 @@ Series of modules with a single task → MCA → Histogram [Leo, Knoll]
 The typical digital signal processing and acquisition chain includes these steps: 
 Digitizer → Code → List mode → Sorting code → Histogram code → Any histograms and matrices [CAEN, XIA, Kapoor]
 
-## Questions
-Question 1. What is gamma-ray emission?
-Question 2. How do gamma rays interact with matter?
-Question 3. Which type of detector is a NaI(Tl) crystal? How do they work?
-Question 4. How do photo-multiplier tubes work? Which types of interactions are involved?
-Question 5. What is the rest mass energy of an electron in MeV? (Mass is 9 x 10-31 kg)
+## Questions (Part 1)
+**Question 1.** What is gamma-ray emission?
+
+**Question 2.** How do gamma rays interact with matter?
+
+**Question 3.** Which type of detector is a NaI(Tl) crystal? How do they work?
+
+**Question 4.** How do photo-multiplier tubes work? Which types of interactions are involved?
+
+**Question 5.** What is the rest mass energy of an electron in MeV? (Mass is 9 x 10-31 kg)
 
 # Activity 1: Coincidences with an Analog Experimental Setup
 1. Make sure the high voltage cable is correctly connected (HV point on the detector to the POS HIGH VOLTAGE of the HV power supply module) as well as the coaxial cable that connects the anode on the detectors to the INPUTS of the preamp module.
@@ -56,11 +60,14 @@ As you saw from the oscilloscope, the pre-amplifier gives output pulses that are
 11. Connect the two CFD/SCA outputs to the universal coincidence module inputs.
 12. Connect the universal coincidence module output to the MCA input and acquire a spectrum on the MCA for a few minutes.
 
-## Questions (continued)
-Question 6. What do the acronyms HV, NIM, CFD, and SCA mean?
-Question 7. What does the MCA spectrum look like for the CFD/SCA output? Save figures.
-Question 8. Are the coincidence module output signals different? Why or why not?
-Question 9. What conditions need to be met for the coincidence module to emit a pulse?
+## Questions (Part 2)
+**Question 6.** What do the acronyms HV, NIM, CFD, and SCA mean?
+
+**Question 7.** What does the MCA spectrum look like for the CFD/SCA output? Save figures.
+
+**Question 8.** Are the coincidence module output signals different? Why or why not?
+
+**Question 9.** What conditions need to be met for the coincidence module to emit a pulse?
 
 13. On the HV module, slowly decrease the voltage to 0 V and switch off the module and the NIM crate.
 14. Gently disconnect the signal coaxial cables from the two detectors.
@@ -171,8 +178,8 @@ To look at the 2D coincidence matrix and save screenshots of the histograms:
 
 - Save screenshots of the gated histograms  :-)
 
-## Questions (continued 2)
-Question 10. The 1173-keV gamma ray in 60Co is in coincidence with which gamma ray?
+## Questions (Part 3)
+**Question 10.** The 1173-keV gamma ray in 60Co is in coincidence with which gamma ray?
 
 The 1332-keV gamma ray in 60Co is in coincidence with which gamma ray?
 
@@ -181,7 +188,7 @@ Which one(s) of the following decay schemes might correspond to 60Co? Why and wh
 ![This is an image](schemes.png)
 
 
-Question 11. The 511-keV gamma ray in 22Na is in coincidence with which gamma ray?
+**Question 11.** The 511-keV gamma ray in 22Na is in coincidence with which gamma ray?
 
 The 1274-keV gamma ray in 22Na is in coincidence with which gamma ray?
 
@@ -189,11 +196,11 @@ What might the decay scheme for 22Na look like? Why?
 
 What if the 511-keV gamma rays come from e-/e+ pair production rather than from the decay?
 
-Question 12. The 662-keV gamma ray in 137Cs is in coincidence with which gamma ray?
+**Question 12.** The 662-keV gamma ray in 137Cs is in coincidence with which gamma ray?
 
 What might the decay scheme for 137Cs look like? Why?
 
-Question 13. Does the National Nuclear Data Center [NNDC] agree with your findings?
+**Question 13.** Does the National Nuclear Data Center [NNDC] agree with your findings?
 
 ## Reporting
 
