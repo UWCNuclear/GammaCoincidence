@@ -22,7 +22,7 @@
 
 ## Introduction
 
-In this experiment, we will be measuring gamma rays – these are the rays coming from the nucleus. Gamma rays are the highest energy electromagnetic radiation we know, even higher than X-rays, and they easily travel through matter [Krane].
+In this experiment, we will measure gamma rays – the rays coming from the nucleus. Gamma rays are the highest energy electromagnetic radiation we know, even higher than X-rays, and they easily travel through matter [Krane].
 
 The typical analogue signal processing and acquisition chain includes these steps: 
 Series of modules with a single task → MCA → Histogram [Leo, Knoll] 
@@ -46,13 +46,13 @@ Digitizer → Code → List mode → Sorting code → Histogram code → Any his
 2. Switch on the NIM crate, the Data Acquisition laptop, and the Palmtop MCA. Start the MCA software on the PC.
 3. On the HV module, set the voltage to 0 V and switch on the module.
 4. Place the 22Na source in the source holder between the detectors. This source gives off gamma rays with energies of 511 keV and 1274 keV. Make sure that the other sources are on the other side of the room to not cause background radiation in the spectrum!
-5. Connect the pre-amp of one detector to channel 1 of the oscilloscope and look at the output (There should be nothing!). (The signal from the detector is first fed into a pre-amplifier.) Repeat by connecting the second detector in channel 2 of the oscilloscope.
+5. Connect the pre-amp of one detector to channel 1 of the oscilloscope and look at the output (There should be nothing!). (The signal from the detector is first fed into a pre-amplifier.) Repeat by connecting the second detector to channel 2 of the oscilloscope.
 6. Slowly increase the voltage to 1250 V. Make sure this is correctly done else you will see nothing!
 7. Make a rough sketch of the oscilloscope figure in your report. Indicate the time and voltage scale used.
 8. With extra BNC cables, connect the pre-amp output to the Dual Spec Amplifier input. Look at the Dual Spec Amplifier output on the oscilloscope and make a sketch. Repeat for the second detector and the second Dual Spec Amplifier module.
-9. If the above is working correctly, you can start to look at the spectrum on the MCA software by connecting the Dual Spec Amplifier output to the MCA input. Learn to use the icons – green arrow to start, read square to stop the counting, and yellow square to delete the spectrum. Repeat for the second detector and the second Dual Spec Amplifier module.
+9. If the above works correctly, you can start looking at the spectrum on the MCA software by connecting the Dual Spec Amplifier output to the MCA input. Learn to use the icons – green arrow to start, read square to stop the counting, and yellow square to delete the spectrum. Repeat for the second detector and the second Dual Spec Amplifier module.
 
-The setup uses a Palmtop Multi-channel analyser (MCA) to digitise the signals. This is what computer people call an ADC – an **analogue-to-digital converter**. It turns the amplitude of the signal into a channel number. We have up to 8192 so-called “channels” that store the number of counts in a specific energy gap. A high amplitude signal goes into a high channel and a low energy signal into a low channel, in a proportional way. These channels are now displayed from left to right on the display. So, high energy is to the right and low energy to the left.
+The setup uses a Palmtop Multi-channel analyser (MCA) to digitise the signals. This is what computer people call an ADC – an **analogue-to-digital converter**. It turns the amplitude of the signal into a channel number. We have up to 8192 so-called “channels” which store the number of counts in a specific energy gap. A high amplitude signal goes into a high channel and a low energy signal into a low channel, in a proportional way. These channels are now displayed from left to right on the display. So, high energy is to the right and low energy is to the left.
 
 As you saw from the oscilloscope, the pre-amplifier gives output pulses that are a few volts high. The heights of these pulses are proportional to the ENERGY of the incoming gamma ray. You can check this by looking at the signal of the 22Na source and comparing it to the 60Co source that gives off higher energy gamma rays. 
 
@@ -67,7 +67,7 @@ As you saw from the oscilloscope, the pre-amplifier gives output pulses that are
 
 **Question 8.** Are the coincidence module output signals different? Why or why not?
 
-**Question 9.** What conditions need to be met for the coincidence module to emit a pulse?
+**Question 9.** What conditions must be met for the coincidence module to emit a pulse?
 
 13. On the HV module, slowly decrease the voltage to 0 V and switch off the module and the NIM crate.
 14. Gently disconnect the signal coaxial cables from the two detectors.
@@ -99,8 +99,8 @@ Like for the analogue system, the heights of the pulses are proportional to the 
 
 Remember the procedure that was done with the analogue set-up in the previous practicals:
 - With a 137Cs source, acquire a spectrum for a few minutes and identify the 662-keV photopeak (full-energy peak). When the acquisition is off, choose a Region of Interest (ROI) around the peak to get the CENTROID value, which is the channel number where the peak is located.
-- Repeat with sources of  22Na (2 peaks) and 60Co (2 peaks), for a total of 5 peaks. While doing this, *make sure that you do not change the voltage or the amplification*, because this will change the energy vs. channel number relationship. 
-- With these energies and channels, we can now get the channel number and energy relationship. Use Excel to find the relationship so that you get an energy scale at the bottom instead of a channel scale.
+- Repeat with sources of  22Na (2 peaks) and 60Co (2 peaks), for a total of 5 peaks. While doing this, *make sure you do not change the voltage or the amplification*, because this will change the energy vs. channel number relationship. 
+- With these energies and channels, we can now get the channel number and energy relationship. Use Excel to find the relationship so you get an energy scale at the bottom instead of a channel scale.
 
 For the digital system, the gain and offset are applied when sorting the data acquired using the sorting code ***xia4ids***.
 
